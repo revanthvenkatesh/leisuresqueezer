@@ -401,9 +401,9 @@
 }
 
 .gallery-item img {
-  object-fit: cover;
+  /*object-fit: cover;
 
-  max-height: 17rem;
+   max-height: 17rem;*/
 
   display: block;
   width: 100%;

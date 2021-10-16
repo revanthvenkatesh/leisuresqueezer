@@ -53,7 +53,7 @@
     gap: 4.8rem;
   }
 
-  .testimonials-container {
+  .drawings-container {
     padding: 9.6rem 3.2rem;
   }
 }
@@ -83,11 +83,6 @@
     width: 60%;
   }
 
-  .delivered-meals {
-    justify-content: center;
-    margin-top: 3.2rem;
-  }
-
   .logos img {
     height: 2.4rem;
   }
@@ -96,11 +91,11 @@
     font-size: 7.4rem;
   }
 
-  .meal-content {
+  .yoga-content {
     padding: 2.4rem 3.2rem 3.2rem 3.2rem;
   }
 
-  .section-testimonials {
+  .section-drawings {
     grid-template-columns: 1fr;
   }
 
@@ -193,17 +188,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .diets {
-    grid-column: 1 / -1;
-    justify-self: center;
-  }
-
   .heading-secondary {
     margin-bottom: 4.8rem;
-  }
-
-  .pricing-plan {
-    width: 100%;
   }
 
   .grid--footer {
@@ -271,7 +257,7 @@
     transform: translateY(2.4rem);
   }
 
-  .testimonials {
+  .drawings {
     grid-template-columns: 1fr;
   }
 
@@ -322,11 +308,11 @@
   margin-right: 1.6rem;
 }
 
-.no-flexbox-gap .meal-attribute:not(:last-child) {
+.no-flexbox-gap .yoga-attribute:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-.no-flexbox-gap .meal-icon {
+.no-flexbox-gap .yoga-icon {
   margin-right: 1.6rem;
 }
 
