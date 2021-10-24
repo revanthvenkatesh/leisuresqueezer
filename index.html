@@ -91,72 +91,153 @@
             <picture>
               <source srcset="img/hobbies/Hero image.jpg" type="image/jpg" />
               <source srcset="img/hobbies/Hero image.jpg" type="image/jpg" />
-              <!-- Slideshow container -->
-              <div class="slideshow-container fade">
-                <!-- Full images with numbers and message Info -->
-
-                <div class="Containers">
-                  <div class="MessageInfo"></div>
-                  <img src="img/gardening/heroimg.jpg" style="width: 100%" />
-                  <div class="Info">Gardening</div>
-                </div>
-
-                <div class="Containers">
-                  <div class="MessageInfo"></div>
-                  <img src="img/gardening/heroimg.jpg" style="width: 100%" />
-                  <div class="Info">Gardening</div>
-                </div>
-
-                <div class="Containers">
-                  <div class="MessageInfo"></div>
-                  <img src="img/yoga/heroimg.jpg" style="width: 100%" />
-                  <div class="Info">Yoga</div>
-                </div>
-
-                <div class="Containers">
-                  <div class="MessageInfo"></div>
-                  <img src="img/instruments/heroimg.jpg" style="width: 100%" />
-                  <div class="Info">Instrumental Music</div>
-                </div>
-
-                <div class="Containers">
-                  <div class="MessageInfo"></div>
-                  <img src="img/drawing/heroimg.jpg" style="width: 100%" />
-                  <div class="Info">Drawing</div>
-                </div>
-
-                <div class="Containers">
-                  <div class="MessageInfo"></div>
-                  <img src="img/family/heroimg.jpg" style="width: 100%" />
-                  <div class="Info">Family Time</div>
-                </div>
-
-                <div class="Containers">
-                  <div class="MessageInfo"></div>
-                  <img src="img/boardgames/heroimg.jpg" style="width: 100%" />
-                  <div class="Info">Board Games</div>
-                </div>
-
-                <!-- Back and forward buttons -->
-                <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <style>
+              
+              
+              /* Slideshow container */
+              .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+              }
+              
+              /* Caption text */
+              .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                top: -30px;
+                width: 100%;
+                text-align: center;
+                background-color: #0b7285;
+              }
+              
+              /* Number text (1/3 etc) */
+              .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+              }
+              
+              /* The dots/bullets/indicators */
+              .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+              }
+              
+              .active {
+                background-color: #717171;
+              }
+              
+              /* Fading animation */
+              .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+              }
+              
+              @-webkit-keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+              }
+              
+              @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+              }
+              
+              /* On smaller screens, decrease text size */
+              @media only screen and (max-width: 300px) {
+                .text {font-size: 11px}
+              }
+              </style>
+              </head>
+              <body>
+              
+              
+              
+              <div class="slideshow-container">
+              
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/drawing/heroimg.jpg" style="width:100%">
+                <div class="text">Drawing</div>
               </div>
-              <br />
-
-              <!-- The circles/dots -->
-              <div style="text-align: center">
-                <span class="dots" onclick="currentSlide(6)"></span>
-                <span class="dots" onclick="currentSlide(5)"></span>
-                <span class="dots" onclick="currentSlide(4)"></span>
-                <span class="dots" onclick="currentSlide(3)"></span>
-                <span class="dots" onclick="currentSlide(2)"></span>
-                <span class="dots" onclick="currentSlide(1)"></span>
+              
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/boardgames/heroimg.jpg" style="width:100%">
+                <div class="text">Boardgames</div>
               </div>
-              <!-- <img
-                src="img/hobbies/Hero.png"
-                class="hero-img"
-                alt="A circular image collage containing hobbies images"
-              />-->
+              
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/family/heroimg.jpg" style="width:100%">
+                <div class="text">Family Time</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/gardening/heroimg.jpg" style="width:100%">
+                <div class="text">Gardening</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/instruments/heroimg.jpg" style="width:100%">
+                <div class="text">Instruments</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/yoga/heroimg.jpg" style="width:100%">
+                <div class="text">Yoga</div>
+              </div>
+              
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+              
+              <script>
+              var slideIndex = 0;
+              showSlides();
+              
+              function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+              }
+              </script>
+              
             </picture>
           </div>
         </div>
