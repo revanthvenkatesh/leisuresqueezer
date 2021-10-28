@@ -55,6 +55,7 @@
           <li><a class="main-nav-link" href="#yogas">Yoga</a></li>
           <li><a class="main-nav-link" href="#drawing">Drawing</a></li>
           <li><a class="main-nav-link" href="#boardgames"> Board Games</a></li>
+          <li><a class="main-nav-link" href="#faq"> FAQ</a></li>
           <li>
             <a class="main-nav-link nav-cta" href="#cta">Feedback</a>
           </li>
@@ -717,7 +718,115 @@
           </div>
         </div>
       </section>
+      <style>
+        div.accordion {
+            background-color: #c5f6fa;
+            color: #444;
+            cursor: pointer;
+            padding: 3rem;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 2rem;
+            transition: 0.4s;
+            font-weight: 500;
+        }
+        
+        
+        
+        div.accordion:after {
+            content: '\02795';
+            font-size: 13px;
+            color: rgb(255, 255, 255);
+            float: right;
+            margin-left: 5px;
+        }
+        
+        div.accordion.active:after {
+            content: "\2796";
+        }
+        
+        div.panel {
+            padding: 0 18px;
+            background-color: #c5f6fa;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.6s ease-in-out;
+            opacity: 0;
+        }
+        .faqtitle{
+          background-color: #c5f6fa;
+          padding-top: 12rem;
+          margin-top: 20rem;
+          font-size: 2rem;
+          text-align: center;
+        }
 
+        .answer{
+          font-size: 2rem;
+          padding:2rem
+                    
+        }
+
+        div.panel.show {
+            opacity: 1;
+            max-height: 500px;  
+        }
+        </style>
+
+        
+       
+        
+        <div class="faqtitle" id="faq">
+        <h1>FAQ</h1>
+      </div>
+       
+        <div class="accordion">What is the best time to do Yoga?
+        </div>
+        <div class="panel">
+          <p class="answer"> Early mornings are the best time for yoga but, you can also perform it 1 hr before mealtime on empty stomach.
+          </p>
+        </div>
+        
+        <div class="accordion">Where can one buy board games for kids?
+        </div>
+        <div class="panel">
+          <p class="answer">You can easily buy them from Amazon ,during festive season one can buy them on sale price.</p>
+        </div>
+        
+        <div class="accordion">How to preserve pencil sketches?
+        </div>
+        <div id="foo" class="panel">
+          <p class="answer">To protect pencil sketches from fading away place butter paper between two sheets.
+          </p>
+        </div>
+        
+        <div class="accordion">How to maintain Musical instruments? 
+        </div>
+        <div id="foo" class="panel">
+          <p class="answer">Frequent cleaning of musical instruments with dry soft cloth is mandatory to avoid any fungus development.
+          </p>
+        </div>
+
+        <div class="accordion">What type of fertilizer should be used for home gardening?
+        </div>
+        <div id="foo" class="panel">
+          <p class="answer">Organic fertilizer , either plant based or animal based is preferably the best for all kinds of plants.</p>
+        </div>
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function(){
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+          }
+        }
+        </script>
+        
       <!-- CTA Section -->
       <section class="section-cta" id="cta">
         <div class="container">
